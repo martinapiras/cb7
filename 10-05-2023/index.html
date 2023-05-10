@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcolatrice</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" type="module"></script>
+  </head>
+  <body>
+    <h1>Calcolatrice</h1>
+    <form action="#" class="form">
+      <input
+        type="number"
+        name="numberOne"
+        id="numberOne"
+        class="numberOne"
+        placeholder="Digita il primo numero"
+        required
+      />
+      <input
+        type="text"
+        name="operator"
+        id="operator"
+        placeholder="Scrivi un operatore: +, -, * o /"
+        class="operator"
+      />
+      <input
+        type="number"
+        name="numberTwo"
+        id="numberTwo"
+        class="numberTwo"
+        placeholder="Digita il secondo numero"
+        required
+      />
+      <input type="submit" value="Calcola" class="submit" />
+      <p class="result">Il risultato è: <span class="resultNumber"></span></p>
+    </form>
+  </body>
+</html>
