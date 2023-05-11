@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", Tahoma, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pageTitle {
+  color: rgb(64, 64, 152);
+  margin: 10px;
+  font-size: 2rem;
+}
+
+.bookList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  width: 400px;
+  padding: 10px;
+}
+
+.book {
+  border: none;
+  border-radius: 10px;
+  padding: 4px;
+  color: rgb(64, 64, 152);
+  background-color: rgb(209, 209, 255);
+  position: relative;
+  transition: all 0.35s;
+  text-align: center;
+  width: 200px;
+  box-shadow: 2px 2px 8px rgb(64, 64, 152);
+  cursor: pointer;
+}
+
+.book:nth-of-type(even) {
+  left: 10px;
+}
+
+.book:nth-of-type(odd) {
+  right: 10px;
+}
+
+.book:hover:nth-of-type(even) {
+  transform: translate(-10px, 0) scale(1.2);
+}
+
+.book:hover:nth-of-type(odd) {
+  transform: translate(10px, 0) scale(1.2);
+}
+
+.read:hover {
+  box-shadow: 2px 2px 8px rgb(64, 152, 73);
+}
+
+.notRead:hover {
+  box-shadow: 2px 2px 8px rgb(152, 64, 64);
+}
