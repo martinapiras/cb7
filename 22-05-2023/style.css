@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Dosis, Tahoma, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather {
+  margin: 10px;
+  padding: 10px;
+  width: 90vw;
+  height: fit-content;
+  overflow-y: auto;
+  color: rgb(45, 70, 109);
+  border-radius: 12px;
+  background-color: rgb(135, 177, 245);
+  box-shadow: 0 0 8px rgb(45, 70, 109);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbar {
+  width: 50%;
+  padding: 3px 6px;
+  border-radius: 12px;
+  border: none;
+  background-color: rgb(172, 199, 243);
+  color: rgb(45, 70, 109);
+}
+
+.searchbar:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgb(45, 70, 109);
+}
+
+.searchButton {
+  background-color: rgb(172, 199, 243);
+  padding: 3px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.weatherWidget {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: none;
+}
+
+.mainData {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+
+.weatherIcon img {
+  filter: drop-shadow(0 0 8px rgb(45, 70, 109));
+}
+
+.hzBar {
+  width: 80%;
+  margin: 10px 10%;
+  color: rgba(45, 69, 109, 0.5);
+  border-radius: 50%;
+}
+
+.locationData {
+  margin-left: 10%;
+}
+
+.city {
+  margin-inline-start: 7px;
+}
+
+/* desktop */
+@media screen and (min-width: 768px) {
+  .weather {
+    width: 40vw;
+  }
+}
