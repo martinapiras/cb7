@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Satisfy&display=swap");
+
+@counter-style white-hearts {
+  system: cyclic;
+  symbols: "\1F90D";
+  suffix: " ";
+}
+
+@counter-style blue-hearts {
+  system: cyclic;
+  symbols: "\1F499";
+  suffix: " ";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Caveat, cursive;
+  font-size: 1.3rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+h1 {
+  font-family: Satisfy, cursive;
+  font-size: 2.5rem;
+}
+
+.listWrapper {
+  width: 100vw;
+  padding: 10px;
+  background-color: violet;
+  box-shadow: 0 0 8px violet;
+  border-radius: 16px;
+}
+
+.list {
+  list-style: white-hearts;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /* margin-inline-start: 20px; */
+}
+
+.todo {
+  background-color: pink;
+  border-radius: 16px;
+  width: 75%;
+  height: fit-content;
+  padding: 4px 16px;
+  transition: all 0.35s;
+}
+
+.todo:active {
+  transform: scale(1.2);
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.addTodo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.newTodo {
+  background-color: pink;
+  border: 0;
+  border-radius: 10px;
+}
+
+.newTodoSubmit {
+  background-color: violet;
+  border: 0;
+  border-radius: 10px;
+  padding: 4px 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .listWrapper {
+    width: 40vw;
+  }
+
+  .todo {
+    width: 80%;
+    cursor: pointer;
+  }
+}
