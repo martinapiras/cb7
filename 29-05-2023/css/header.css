@@ -1,0 +1,183 @@
+.header {
+  position: sticky;
+  top: 0;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: safe center;
+  padding-left: 4%;
+  gap: 20px;
+  height: 100vh;
+}
+
+a:visited,
+a:link {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.logoContainer {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.35s;
+}
+
+.logoContainer:hover,
+.navLink:hover {
+  background-color: var(--color-hover);
+}
+
+.logoContainer svg {
+  width: 30px;
+  height: auto;
+}
+
+.navLinks {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  gap: 20px;
+  font-size: 20px;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 5px 10px;
+  transition: all 0.35s;
+}
+
+.navLink__icon {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.navLink__icon svg {
+  width: 24px;
+  height: auto;
+}
+
+.navLink__label {
+  text-decoration: none;
+}
+
+.tweetButton {
+  display: flex;
+  text-align: center;
+  width: 80%;
+  background-color: var(--color-brand);
+  padding: 15px 30px;
+  border-radius: 26px;
+}
+
+.tweetButton__label {
+  width: 100%;
+  text-align: center;
+}
+
+.tweetButton__icon {
+  display: none;
+}
+
+.tweetButton__icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userSection__content {
+  width: 90%;
+  display: flex;
+  gap: 15px;
+}
+
+.userSection__profilePic,
+.userSection__profilePic img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.userData-screenName {
+  font-weight: bold;
+}
+
+.userSection__actions {
+  width: 10%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.userSection__actions svg {
+  width: 20px;
+  height: fit-content;
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .header {
+    width: 8%;
+    padding-left: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navLink__label {
+    display: none;
+  }
+
+  .logoContainer:active,
+  .navLink:active {
+    background-color: var(--color-hover);
+  }
+
+  .tweetButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tweetButton__label {
+    display: none;
+  }
+
+  .tweetButton__icon {
+    display: block;
+    padding: 0;
+  }
+
+  .userSection__content {
+    width: 100%;
+    gap: 0;
+  }
+
+  .userData-screenName,
+  .userData-nickname,
+  .userSection__actions {
+    display: none;
+  }
+}

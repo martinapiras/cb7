@@ -1,0 +1,14 @@
+.mainContainer {
+  display: flex;
+}
+
+.mainContent {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard {
+  width: 60%;
+  background-color: violet;
+}
