@@ -1,0 +1,24 @@
+.mainContainer {
+  display: flex;
+}
+
+.mainContent {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard {
+  width: 60%;
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .mainContent {
+    width: 92%;
+  }
+
+  .dashboard {
+    width: 100%;
+  }
+}
