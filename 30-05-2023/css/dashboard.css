@@ -1,0 +1,231 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: safe center;
+  justify-content: safe center;
+  height: 100vh;
+}
+
+.dashboardHeader {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  border: 1px solid var(--color-sidebar-text);
+  border-top: none;
+  padding: 10px;
+  padding-top: 2px;
+  background-color: #000000d0;
+}
+
+.dashboardHeader__title {
+  height: 10%;
+}
+
+.dashboardNavigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 90%;
+}
+
+.dashboardNavigation__forYou,
+.dashboardNavigation__following {
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dashboardNavigation__forYou p,
+.dashboardNavigation__following p {
+  position: relative;
+  text-align: center;
+}
+
+.dashboardNavigation__forYou p::after,
+.dashboardNavigation__following p::after {
+  content: "";
+  width: 55px;
+  height: 3px;
+  background-color: var(--color-brand);
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dashboardNewPost {
+  display: flex;
+  border: 1px solid var(--color-sidebar-text);
+  width: 100%;
+  padding: 10px;
+}
+
+.newPost__profilePic {
+  width: 10%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.newPost__profilePic img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.newPost__content {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newPost__input {
+  width: 100%;
+  border: none;
+  color: var(--color-sidebar-text);
+  font-size: 1.2rem;
+  text-align: justify;
+  font-family: Roboto, sans-serif;
+  background-color: var(--color-black);
+  resize: none;
+  outline: none;
+}
+
+.newPost__input:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.newPost__actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newPost__icons {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.newPost__sendTweet {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 4px 10px;
+}
+
+.sendTweetBtn {
+  width: fit-content;
+  padding: 8px 16px;
+  background-color: var(--color-brand);
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.newPost__icon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newPost__icon svg {
+  width: 20px;
+  height: auto;
+  fill: var(--color-brand);
+}
+
+/* TWEETS */
+.tweets {
+  width: 100%;
+  border: 1px solid var(--color-sidebar-text);
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  justify-items: safe start;
+}
+
+.tweetWrapper {
+  width: 100%;
+  border-bottom: 1px solid var(--color-sidebar-text);
+  display: flex;
+  padding: 10px;
+}
+
+.tweet__profilePic {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tweet__profilePic img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.tweet__content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.tweet__userBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tweet__userData {
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.tweet__userData .userData-nickname {
+  color: var(--color-sidebar-text);
+}
+
+.userBar__actions {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.userBar__actions svg {
+  width: 25px;
+  height: auto;
+  fill: var(--color-sidebar-text);
+}
+
+.tweet__reactions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tweet__reaction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 20%;
+  color: var(--color-sidebar-text);
+}
+
+.tweet__reaction svg {
+  fill: var(--color-sidebar-text);
+  width: 10px;
+}

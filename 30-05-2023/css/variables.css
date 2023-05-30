@@ -1,0 +1,8 @@
+:root {
+  --color-black: #000;
+  --color-text: #e7e9ea;
+  --color-hover: rgba(239, 243, 244, 0.2);
+  --color-brand: rgb(29, 155, 240);
+  --color-sidebar: rgba(239, 243, 244, 0.2);
+  --color-sidebar-text: #e7e9eac0;
+}
